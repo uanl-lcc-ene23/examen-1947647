@@ -1,0 +1,108 @@
+<ion-app>
+  <ion-header>
+      <ion-toolbar>
+        <ion-title class="negritas" style="color: white;">Escuchados Recientemente</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+  <ion-content style="align-items: normal;">
+      <ion-grid>
+          <ion-row>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3" >
+                  <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="../../assets/imagen/img2.jpg" />
+                      <p style="color: white;">The Wheekend</p>
+                    </ion-avatar>
+              </ion-col>
+              <ion-col class="img" size="3" sizeMd="3" sizeLg="3" sizeXl="3" >
+                  <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="../../assets/imagen/img3.jpg" />
+                      <p style="color: white;">Taylor Swift</p>
+                    </ion-avatar>
+              </ion-col>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                  <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="../../assets/imagen/img4.jpg" />
+                      <p style="color: white;">Miley Cyrus</p>
+                    </ion-avatar>
+              </ion-col>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                  <ion-avatar>
+                      <img alt="Silhouette of a person's head" src="../../assets/imagen/img5.jpg" />
+                      <p style="color: white;">Ariana Grande</p>
+                    </ion-avatar>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+      <br>
+      <br>
+          <div>
+            <p class="italico" style="color: white;">MIS PLAYLIST</p>
+          <ion-grid>
+            <ion-row>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                <img src="../../assets/imagen/mix.jpg">
+                <ion-button class="transparente" routerLink="/playlist">ver</ion-button>
+              </ion-col>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                <img src="../../assets/imagen/mix2.jpg">
+                <ion-button class="transparente" routerLink="/playlist2">ver</ion-button>
+              </ion-col>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                <img src="../../assets/imagen/mix3.jpg">
+                <ion-button class="transparente" routerLink="/playlist3">ver</ion-button>
+              </ion-col>
+              <ion-col class="img"  size="3" sizeMd="3" sizeLg="3" sizeXl="3">
+                <img src="../../assets/imagen/mix4.jpg">
+                <ion-button class="transparente" routerLink="/playlist3">ver</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="player">
+            <div class="progress-bar">
+              <div class="progress" [style.width]="progress + '%'">
+              </div>
+              <ion-row>
+                <ion-col size="1.5">
+                  <img src="../../assets/imagen/img2.jpg">
+                </ion-col>
+                <ion-col size="8">
+                  <b>After Hours</b><br>
+                  <span>The Weekend</span>
+                </ion-col>
+                <ion-col size="1.5">
+                  <ion-icon name="play-sharp"  color="light" size="large">
+                  </ion-icon>
+                </ion-col>
+                
+              </ion-row>
+            </div> 
+          </div>
+        <ion-tabs>
+          <ion-tab-bar>
+              <ion-tab-button routerLink="/inicio">
+                  <ion-icon name="home-outline"></ion-icon>Inicio</ion-tab-button>
+              <ion-tab-button routerLink="/buscar">
+                  <ion-icon name="search-outline"></ion-icon>Buscar</ion-tab-button>
+              <ion-tab-button routerLink="/libreria">
+                  <ion-icon name="reorder-four-outline"></ion-icon>Tu biblioteca</ion-tab-button>
+          </ion-tab-bar>
+      </ion-tabs>
+      <router-outlet></router-outlet>
+    </ion-content>
+</ion-app>

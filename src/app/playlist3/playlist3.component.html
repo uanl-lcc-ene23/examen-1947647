@@ -1,0 +1,63 @@
+<ion-app>
+  <ion-header [translucent]="true" class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons routerLink="/inicio">
+        <ion-icon name="arrow-back-outline" routerLink="/inicio"></ion-icon>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <div class="album-cover">
+      <ion-thumbnail>
+        <img src="../../assets/imagen/playlist3.jpg">
+      </ion-thumbnail>
+    </div>
+  
+    <div class="album-info">
+      <div>
+       Ariana Grande and more
+      </div>
+      <div>
+        Made for <ion-text color="dark">Eva</ion-text>
+      </div>
+      <div>8h 10m</div>
+    </div>
+  
+    <div class="buttons">
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <ion-button fill="clear" color="medium">
+              <ion-icon slot="icon-only" size="small" name="heart-outline"></ion-icon>
+          </ion-button>
+          <ion-button fill="clear" color="medium">
+              <ion-icon slot="icon-only" size="small" name="ellipsis-horizontal"></ion-icon>
+          </ion-button>
+        </ion-col>
+  
+        <ion-col size="auto">
+          <ion-fab-button color="primary" size="small">
+            <ion-icon name="play-sharp" size="small"></ion-icon>
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  
+    <div class="song-list">
+      <ion-list>
+        <ion-item lines="none" *ngFor="let i of [0,1,2,3,4,5,6]">
+          <ion-thumbnail slot="start">
+            <img src="{{'assets/imagen/ariana' + (i%5 + 1) + '.jpg'}}" >
+          </ion-thumbnail>
+          <ion-label>
+            <h3 style="color: wheat;">Song number {{i + 1}}</h3>
+            <p>Ariana Grande</p>
+          </ion-label>
+          <ion-icon slot="end" name="ellipsis-horizontal" size="small"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+  
+</ion-app>
+

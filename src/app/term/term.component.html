@@ -1,0 +1,39 @@
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons routerLink="/contraseña">
+                    <ion-icon name="arrow-back-circle-outline" ></ion-icon>
+              </ion-buttons>
+          <ion-title class="i" color="white">Crear una cuenta</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    
+    <ion-content>
+        <div>
+            <h2 class="negritas"> Ingresa tu nombre</h2>
+            <ion-list>
+                <ion-item>
+                    <ion-label></ion-label>
+                    <ion-input type="text"  class="caja"></ion-input>
+                </ion-item>                
+            </ion-list>
+            
+            <div class="italico">
+                <p style="color: white;" >Acepto terminos y condiciones</p>
+                <p class="verde">Terminos de uso</p>
+                <ion-list style="text-align: center;">
+                    <ion-item>
+                        <ion-checkbox labelPlacement="start">
+                            <p style="color: white;">Acepto los terminos de uso y politicas de privacidad de mi app</p>
+                        </ion-checkbox>
+                    </ion-item>
+                  </ion-list>
+            </div>
+
+            <div class="boton">
+                <ion-button class="verde" style="color: white;">Crear Cuenta</ion-button>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </ion-content>
+</ion-app>

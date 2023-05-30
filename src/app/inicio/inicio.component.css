@@ -1,0 +1,51 @@
+.negritas{
+  font-weight: 700;
+}
+.italico{
+  font-style:italic;
+}
+ion-col.img{
+  max-width: 130px;
+  height: 200px;
+  padding: .5em;
+  height: 20vh
+  
+}
+ion-button.transparente {
+  --background: transparent;
+  --background-hover: var(--negro);
+  --background-activated: var(--negro);
+  --background-focused: var(--blanco);
+  --color: var(--blanco);
+  --box-shadow: none;
+  text-transform: capitalize;
+  --border-radius: 50px;
+  height: auto;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+  font-size: 16px;
+  display: flex;
+justify-content: center;
+}
+.player{
+  height: 55px;
+  background-color: rgb(146, 63, 57);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: small;
+}
+.player .progres-bar{
+  width: 100px;
+  height: 2px;
+  background: #8d8484;
+}
+.player .progres-bar .progress{
+  background: #f7f5f5;
+  height: 100px;
+}
+ion-tab-button:hover ion-label,
+ion-tab-button:hover ion-icon,
+ion-tab-button:focus ion-label,
+ion-tab-button:focus ion-icon{
+    color: var(--verde);
+}

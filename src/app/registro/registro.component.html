@@ -1,0 +1,27 @@
+<ion-app>
+    
+<ion-content>
+    
+        <img class="img" src="../../assets/imagen/img1.png">
+    
+    <div class="boton">
+        <div class="div1">
+            <h2 class="negritas">Millones de canciones en un solo lugar</h2>
+        </div>
+            <ion-grid>
+                <ion-row>
+                        <ion-button  class="verde" routerLink="/login" routerLinkActive="/login">
+                            iniciar Sesion
+                        </ion-button>
+                </ion-row>
+                <ion-row>
+                    <ion-button  class="transparente" routerLink="/registrarse" routerLinkActive="/registrar">
+                        Registrarse
+                    </ion-button>
+                </ion-row>
+
+            </ion-grid>
+    </div>
+    <router-outlet></router-outlet>
+</ion-content>
+</ion-app>

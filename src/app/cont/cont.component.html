@@ -1,0 +1,28 @@
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons routerLink="/registrarse">
+                <ion-icon name="arrow-back-outline"  routerLink="/registrarse"></ion-icon>
+            </ion-buttons>
+          <ion-title class="i" color="white">Crear una cuenta</ion-title>
+        </ion-toolbar>
+      </ion-header>
+    
+    <ion-content>
+        <div>
+            <h2 class="negritas"> Ingresa tu contraseña</h2>
+            <ion-list>
+                <ion-item>
+                    <ion-label></ion-label>
+                    <ion-input type="text"  class="caja"></ion-input>
+                </ion-item>
+                <div class="boton">
+                    <ion-button class="verde" routerLink="/login">Siguiente</ion-button>
+                </div>
+                    
+                
+            </ion-list>
+        </div>
+        <router-outlet></router-outlet>
+    </ion-content>
+</ion-app>

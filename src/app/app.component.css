@@ -1,0 +1,7 @@
+
+ion-tab-button:hover ion-label,
+ion-tab-button:hover ion-icon,
+ion-tab-button:focus ion-label,
+ion-tab-button:focus ion-icon{
+    color: var(--verde);
+}
